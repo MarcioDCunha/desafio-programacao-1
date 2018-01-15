@@ -29,12 +29,12 @@ fita_espelho.each_line do |linha|
       #Dados do arquivo.txt
       @vt1 = "#{ linha[0...80] }"
       puts "@vt1: #{@vt1}"
-      @vt2 = "#{ @vt1.split(/	/).slice(1..-1) }"
-      puts "@vt2: #{@vt2}"
+      #@vt2 = "#{ @vt1.split(/	/).slice(0..6) }"
+      #puts "@vt2: #{@vt2}"
       @venda = {
-        :purchaser_name => "#{@vt1.split('	').first}",    :purchaser_count => "#{@vt2.split(',').first}"     
-        #:item_description => "#{ linha[16...17] }",                 :item_price => "#{ linha[17...18] }",
-        #:merchant_name => "#{ linha[20...80] }".strip,              :merchant_address => "#{@vt.split('	').last}"
+        :purchaser_name => "#{@vt1.split('	').first}",              :purchaser_count => "#{@vt1.split(/	/).slice(1..-1)[0]}",    
+        :item_description => "#{@vt1.split(/	/).slice(1..-1)[1]}",    :item_price => "#{@vt1.split(/	/).slice(1..-1)[2]}",
+        :merchant_name => "#{@vt1.split(/	/).slice(1..-1)[3]}",    :merchant_address => "#{@vt1.split('	').last}"
          }
      puts "\n"
     puts ":linha_toda => #{@venda[:linha_toda]} \n"
