@@ -22,24 +22,29 @@ end
 
 fita_espelho.each_line do |linha|
 
-  case linha[0...9]
+  case linha[0...9]  # Na 1ª linha
     when 'purchaser'
     
     else
       #Dados do arquivo.txt
+      @vt1 = "#{ linha[0...80] }"
+      puts "@vt1: #{@vt1}"
+      @vt2 = "#{ @vt1.split(/	/).slice(1..-1) }"
+      puts "@vt2: #{@vt2}"
       @venda = {
-        :purchaser_name => "#{ linha[0...9] }",                :purchaser_count => "#{ linha[9...16] }",
-        :item_description => "#{ linha[16...17] }",            :item_price => "#{ linha[17...18] }",
-        :merchant_name => "#{ linha[20...80] }".strip,         :merchant_address => "#{ linha[80...91] }"
+        :purchaser_name => "#{@vt1.split('	').first}",    :purchaser_count => "#{@vt2.split(',').first}"     
+        #:item_description => "#{ linha[16...17] }",                 :item_price => "#{ linha[17...18] }",
+        #:merchant_name => "#{ linha[20...80] }".strip,              :merchant_address => "#{@vt.split('	').last}"
          }
      puts "\n"
-
+    puts ":linha_toda => #{@venda[:linha_toda]} \n"
     puts ":purchaser_name => #{@venda[:purchaser_name]}      :purchaser_count => #{@venda[:purchaser_count] } \n"
     puts ":item_description => #{@venda[:item_description]}  :item_price => #{@venda[:item_price] } \n"
     puts ":merchant_name => #{ @venda[:merchant_name]}       :merchant_address => #{ @venda[:merchant_address] } \n \n"
 
 
       #Verifica se a @venda estï¿½ na base.
+
       @venda[:n] = dbh.query("SELECT id from purchasers where purchaser_name=#{@venda[:purchaser_name]} and 
       purchaser_count=#{@venda[:purchaser_count]} and item_description=#{@venda[:item_description]} and 
       item_price=#{@venda[:item_price]} and merchant_name=#{@venda[:merchant_name]} ").fetch_row
