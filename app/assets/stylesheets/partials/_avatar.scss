@@ -1,0 +1,95 @@
+// Colors
+// -------------------------
+$avatar-border-color: #FFFFFF;
+
+// Ratio
+// -------------------------
+$avatar-percent-ratio: 0.2;
+$avatar-ratio-border: 0.05;
+
+// Medium
+// -------------------------
+$avatar-medium-size: 100px;
+$avatar-medium-margin: $avatar-medium-size * 0.2;
+$avatar-medium-border-size: $avatar-medium-size * $avatar-ratio-border;
+
+// Big
+// -------------------------
+$avatar-big-size: $avatar-medium-size * 1.5;
+$avatar-big-margin: $avatar-big-size * 0.2;
+$avatar-big-border-size: $avatar-big-size * $avatar-ratio-border;
+
+// Small
+// -------------------------
+$avatar-small-size: $avatar-medium-size * 0.5;
+$avatar-small-margin: $avatar-small-size * 0.2;
+$avatar-small-border-size: $avatar-small-size * $avatar-ratio-border;
+
+// Mini
+// -------------------------
+$avatar-mini-size: $avatar-medium-size * 0.25;
+$avatar-mini-margin: $avatar-mini-size * 0.2;
+$avatar-mini-border-size: 1px;
+
+.avatar {
+  height: $avatar-medium-size;
+  width: $avatar-medium-size;
+  margin: $avatar-medium-margin;
+  border: $avatar-medium-border-size solid $avatar-border-color; 
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.3), 0 2px 3px rgba(0,0,0,0.4);
+  &:hover {
+    width: $avatar-medium-size + ($avatar-medium-size * $avatar-percent-ratio);
+    height: $avatar-medium-size + ($avatar-medium-size * $avatar-percent-ratio);
+    margin: $avatar-medium-margin - ($avatar-medium-size * ($avatar-percent-ratio / 2));
+  }
+
+  &.big {
+    height: $avatar-big-size;
+    width: $avatar-big-size;
+    margin: $avatar-big-margin;
+    border: $avatar-big-border-size solid $avatar-border-color;
+    &:hover {
+      width: $avatar-big-size + ($avatar-big-size * $avatar-percent-ratio);
+      height: $avatar-big-size + ($avatar-big-size * $avatar-percent-ratio);
+      margin: $avatar-big-margin - ($avatar-big-size * ($avatar-percent-ratio / 2));
+    }
+  }
+
+  &.small {
+    height: $avatar-small-size;
+    width: $avatar-small-size;
+    margin: $avatar-small-margin;
+    border: $avatar-small-border-size solid $avatar-border-color;
+    &:hover {
+      width: $avatar-small-size + ($avatar-small-size * $avatar-percent-ratio);
+      height: $avatar-small-size + ($avatar-small-size * $avatar-percent-ratio);
+      margin: $avatar-small-margin - ($avatar-small-size * ($avatar-percent-ratio / 2));
+    }
+  }
+
+  &.mini {
+    height: $avatar-mini-size;
+    width: $avatar-mini-size;
+    margin: $avatar-mini-margin;
+    border: $avatar-mini-border-size solid $avatar-border-color;
+    &:hover {
+      width: $avatar-mini-size + ($avatar-mini-size * $avatar-percent-ratio);
+      height: $avatar-mini-size + ($avatar-mini-size * $avatar-percent-ratio);
+      margin: $avatar-mini-margin - ($avatar-mini-size * ($avatar-percent-ratio / 2));
+    }
+  }
+
+  &.family {
+    &:hover {
+      border-color: $family;
+    }
+  }
+
+  &.housemaid {
+    &:hover {
+      border-color: $housemaid;
+    }
+  }
+
+  @include transition(all 0.2s);
+}

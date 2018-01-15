@@ -1,0 +1,65 @@
+.teaser {
+	figure {
+	  color: $gray-darker;
+	  font-size: 28px;
+	  height: 75px;
+	  margin: 0 0 60px 0;
+	  padding: 25px 0 0;
+	  position: relative;
+	  text-align: center;
+	  transition: box-shadow .2s;
+	  width: 75px;
+	  -moz-transition: box-shadow .2s;
+	  -o-transition: box-shadow .2s;
+	  -webkit-transition: box-shadow .2s;
+	  border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  -webkit-border-radius: 50%;
+	  &:after {
+	    box-shadow: 0 0 0 2px $gray-darker;
+	    left: 0;
+        padding: 0;
+        top: 0;
+        transition: transform .2s, opacity .2s;
+        -moz-transition: -moz-transform .2s, opacity .2s;
+        -o-transition: -o-transform .2s, opacity .2s;
+        -webkit-transition: -webkit-transform .2s, opacity .2s;
+        box-sizing: content-box;
+        content: '';
+        height: 100%;
+        pointer-events: none;
+        position: absolute;
+	    width: 100%;
+		-moz-box-sizing: content-box;
+		-o-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+  }
+
+	&:hover {
+	  figure {
+	    box-shadow: 0 0 0 10px rgba(74, 31, 93, 0.4);;
+		&:after {
+		  	transform: scale(0.84);
+			-moz-transform: scale(0.84);
+			-ms-transform: scale(0.84);
+			-o-transform: scale(0.84);
+			-webkit-transform: scale(0.84);
+			box-shadow: 0 0 0 2px $purple;
+		}
+	  }	  
+	}
+}
+
+.top-line {
+  background: $purple;
+  height: 1px;
+  position: absolute;
+  width: 90px;
+  left: 50%;
+  margin-left: -45px;
+  top: 105px;
+}

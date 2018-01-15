@@ -1,0 +1,22 @@
+
+.photo {
+    display: table;
+    margin: 0 auto;
+    border: 8px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Opera, Chrome, and Safari */;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    &:hover {
+      cursor:pointer;
+	  transform: rotate(-0deg);
+	  -ms-transform: rotate(-0deg); /* IE 9 */
+	  -webkit-transform: rotate(-0deg); /* Opera, Chrome, and Safari */;
+	  -webkit-transition: all 0.4s;
+	  -moz-transition: all 0.4s;
+	  transition: all 0.4s;
+    }
+}

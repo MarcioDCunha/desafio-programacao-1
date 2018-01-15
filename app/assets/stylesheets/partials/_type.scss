@@ -1,0 +1,74 @@
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal !important;
+  font-family: $titleFontFamily;
+  small,
+  .small {
+    margin: 0 0 0 20px;
+  }
+}
+
+h1,
+h2,
+h3 {
+
+  small,
+  .small {
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+h4,
+h5,
+h6 {
+  small,
+  .small {
+    font-size: 55%;
+  }
+}
+
+h4.home {
+  font-size: 22px !important;
+  font-family: 'Museo1';
+  &.top_housemaid {
+    color: $housemaid;
+    margin: 30px 0;
+  }
+}
+
+table {
+  width: 100%;
+  border-bottom: 1px solid $gray-light;
+  thead {
+    border-bottom: 1px solid $gray-light;
+  }
+  th, tr {
+    height: 40px;
+  }
+  td {
+    text-align: center;
+  }
+  tr.unread {
+    font-weight: bold;
+  }
+}
+
+body {
+  background: url(/assets/bg_body.jpg) #E2E2E2;
+}
+
+blockquote {
+  small {
+    &:before {
+      content: "";
+    }
+  }
+}
+
+p {
+  margin: 0 !important;
+}

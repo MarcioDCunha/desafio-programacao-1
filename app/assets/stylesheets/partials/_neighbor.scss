@@ -1,0 +1,80 @@
+.neighbor {
+  min-height: 80px;
+  > {
+    div {
+      float: left;
+      width: 70%;
+      padding: 16px 0 0;
+      p {
+        margin: 0;
+      }
+    }
+    a {
+	  float: left;
+	}
+  }
+  .avatar-wrapper {
+    height: 150px;
+  }
+  .avatar-conteiner {
+    font-size: 12px;
+    width:25% !important;
+    float: left !important;
+    padding: 0;
+    height: 200px;
+    cite {
+      display: block;
+    }
+  }
+  .neighbor-content {
+    width: 50% !important;
+    margin: 25px 0 0;
+    padding: 16px 10px 0;
+    .text {
+      margin: 0;
+	  font-size: 12px;
+	  font-weight: 300 !important;
+    }
+  }
+  .neighbor-side {
+    width: 20%;
+	  float: left;
+	  margin: 25px 0 0;
+	  .emblems {
+	    padding: 10px 0;
+	  }
+  }
+  .name {
+    color: $purple;
+    font-weight: bold;
+  }
+  blockquote {
+    min-height: 40px;
+  }
+}
+
+#neighbors {
+  .neighbor {
+    min-height: 250px !important;
+  }
+  .availability-grid {
+    width: 235px !important;
+    input[type="checkbox"] {
+      width: 18px;
+      height: 21px;
+    }
+    span {
+      width: 80px;
+    }
+    .weekday {
+      width: 21px !important;
+    }
+    .weekday:first-child {
+      margin-left: 86px !important;
+    }
+  }
+}
+
+.detach {
+  color: $housemaid;
+}

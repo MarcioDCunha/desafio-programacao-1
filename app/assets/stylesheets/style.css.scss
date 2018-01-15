@@ -1,0 +1,16 @@
+
+/* Remove spin buttons from Chrome */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.radio-inline {
+  display: inline; margin-left: 0.5em;
+}

@@ -1,0 +1,6 @@
+purchaser_name	purchase_count	item_description	item_price	merchant name	merchant address
+João Silva	2	food	20.00	Bob's Pizza	Fake St 987
+Amy Pond	5	awesome	50.00	Tom's Awesome Shop	Unreal Rd 456
+Marty McFly	1	Sneaker	20.00	Sneaker Store Emporium	Fake St 123
+Snake Plissken	4	Sneaker	5.00	Sneaker Store Emporium
+	Fake St 123

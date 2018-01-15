@@ -1,0 +1,47 @@
+<%= form_with(model: purchaser, local: true) do |form| %>
+  <% if purchaser.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(purchaser.errors.count, "error") %> prohibited this purchaser from being saved:</h2>
+
+      <ul>
+      <% purchaser.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :purchaser_name %>
+    <%= form.text_field :purchaser_name, id: :purchaser_purchaser_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :purchaser_count %>
+    <%= form.number_field :purchaser_count, id: :purchaser_purchaser_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :item_description %>
+    <%= form.text_field :item_description, id: :purchaser_item_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :item_price %>
+    <%= form.text_field :item_price, id: :purchaser_item_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :merchant_name %>
+    <%= form.text_field :merchant_name, id: :purchaser_merchant_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :merchant_address %>
+    <%= form.text_field :merchant_address, id: :purchaser_merchant_address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

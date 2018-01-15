@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Upload de dados</h3>
+  </div>
+  <div class="panel-body">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+
+		      </div>
+		      <div class="modal-body">
+		        <%= form_tag({ action: :upload_arquivo }, {:multipart => true}) do |f| %>
+		        	<%= file_field_tag 'arquivo[]' %>
+				      <div class="modal-footer">
+				        <%= submit_tag 'Salvar', class: "btn btn-primary", data: { disable_with: "Anexando..." } %>
+				      </div>
+		        <% end %>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+  </div>
+</div>

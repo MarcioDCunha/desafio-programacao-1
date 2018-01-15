@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Purchaser name:</strong>
+  <%= @purchaser.purchaser_name %>
+</p>
+
+<p>
+  <strong>Purchaser count:</strong>
+  <%= @purchaser.purchaser_count %>
+</p>
+
+<p>
+  <strong>Item description:</strong>
+  <%= @purchaser.item_description %>
+</p>
+
+<p>
+  <strong>Item price:</strong>
+  <%= @purchaser.item_price %>
+</p>
+
+<p>
+  <strong>Merchant name:</strong>
+  <%= @purchaser.merchant_name %>
+</p>
+
+<p>
+  <strong>Merchant address:</strong>
+  <%= @purchaser.merchant_address %>
+</p>
+
+<%= link_to 'Edit', edit_purchaser_path(@purchaser) %> |
+<%= link_to 'Back', purchasers_path %>

@@ -1,0 +1,18 @@
+<fieldset class="fieldCont">
+  <legend>Atualiza&ccedil;&atilde;o SIAPE</legend>
+
+  <h1>Upload Fita Espelho</h1>
+  
+  <table class="Cabecalho" border="0">
+  <% form_for(@fita_espelho, :url => {:action => 'upload' }, :html => {:multipart => true} ) do |f| %>
+    <tr>
+      <td>
+        Selecione o arquivo:&nbsp;
+        <%= f.file_field 'file' %>
+      </td>
+      <td><%= f.submit "Salvar" %></td>
+    </tr>
+  <% end %>
+  </table>
+  <br/>
+</fieldset>

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste: <%= controller.controller_name %> - <%= controller.action_name %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %-->
+    <!--%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %-->
+    
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+  <!--%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %-->
+  <!--%= javascript_include_tag 'application', 'data-turbolinks-track' => true %-->
+  
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+</head>
+<body>
+  <div id="mainmenu">
+        <!-- content -->
+
+     <div id="container">
+          <%= yield %>
+
+          <br></br>
+        </div>
+        
+</div>
+
+  </body>
+</html>

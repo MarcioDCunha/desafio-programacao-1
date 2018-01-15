@@ -1,0 +1,440 @@
+
+.side_bar {
+	background: $gray-lighter;
+	min-height: 400px;
+}
+
+.wrapper.footer {
+  border-top: 12px solid #626262;
+  background: url("/assets/bg_footer.jpg") no-repeat 0 0 #5a5a5a;
+}
+
+.page-header {
+  h3 {
+  	margin: 0 !important;
+  }
+  margin: 0 0 20px !important;
+}
+
+.alert {
+  padding: 25px 35px 25px 14px !important;
+  margin: 20px 0 !important;
+}
+
+#main {
+  h3 {
+  	/* border-bottom: 2px solid $family;*/
+  	margin-bottom: 20px !important;
+  }
+  .label {
+  	background-color: $housemaid !important;
+  	padding: 5px 5px;
+    margin: 3px 0;
+    font-size: 10px;
+    margin: 5px 0;
+    background-color: rgba(74, 31, 93, 0.4) !important;
+  }
+}
+
+#last_users {
+  background-color:$housemaid;
+  background-image: url(/assets/profiles_bg.jpg);
+  background-position: center;
+  background-repeat:repeat;
+  display:block;
+  position:relative;
+  z-index:120;
+  text-align:center;
+  padding: 30px 0;
+}
+
+#submenu {
+  /*margin: 0 25%;*/
+  /*font-size: 12px;*/
+  li {
+    a {
+      font-family: 'Museo2';
+      line-height: 6px;
+      padding: 8px 7px;
+      margin-top: 10px;
+      &:hover {
+        background-color: $family;
+        color: $white;
+        border-radius: 5px;
+        font-weight: normal;
+        text-shadow: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.slider-wrapper {
+  background: url(/assets/slider/familia-bg.jpg); 
+}
+
+#last_users {
+  color: $white !important;
+  p {
+    font-size: 11px;
+  }
+
+  a {
+    color: $white !important;
+  }
+}
+
+.btn {
+  font-family: 'Museo1';
+  font-size: 11px;
+}
+
+.btn-group .btn {  
+  color: #999999;
+}
+
+#neighbors {
+  min-height: 500px;
+  .neighbor {
+    .rating {
+      float: right;
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+#social {
+  padding: 30px 0;
+  background: #ffffff !important;
+  margin: 30px 0 0;
+}
+
+.sign_up_teaser {
+  margin: 30px 0;
+}
+
+h3.title {
+  border-bottom: 2px solid $family;
+  margin-bottom: 25px !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+{
+  height: 30px !important;
+}
+
+.form-actions > input {
+  float: right;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+}
+
+.input-append .add-on {
+  height: 30px;
+  background-color: $family;
+  color: $white;
+  font-family: 'Museo2';
+}
+
+.action {
+  font-size: 13px !important;
+  margin: 30px 0;
+}
+
+testarea {
+  height: 100px;
+}
+
+.order > p {
+  font-size: 12px;
+}
+
+.share {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+#resume h5,
+#resume p {
+  margin: 15px 0 !important;
+}
+
+.spacer {
+  margin: 30px 0;
+}
+
+.sleep {
+  margin-top: 20px;
+}
+
+.modal.fade.in {
+  top: 150px !important;
+}
+
+.top_avatar > a {
+  position: relative;
+  top: -30px;
+}
+
+.navbar-form {
+  margin-top: 7px;
+}
+
+.enjoy {
+  background: $housemaid;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  h3 {
+    color: $family;
+  }
+}
+
+#panel {
+  .neighbor-wrapper {
+    width: 150px;
+    display: table-cell;
+  }
+  .enjoy {
+    border-radius: 15px;
+    color: $white;
+    padding: 5px 15px 10px 15px !important;
+    margin: 15px 0 !important;
+  }
+  ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding: 0;
+    &.rounded {
+      span {
+        position: relative;
+        display: block;
+        padding: 5px 20px 5px;
+        *padding: .4em;
+        margin: .5em 0;
+        color: $white;
+        &:before {
+          color: $family;
+          content: counter(li);
+          counter-increment: li;
+          position: absolute;
+          left: -1.3em;
+          top: 50%;
+          margin-top: -1.0em;
+          line-height: 2em;
+          text-align: center;
+          font-weight: bold;
+          padding: 1px 11px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.disable {
+  color: #FF0000 !important;
+}
+
+.enable {
+  color: #00ff00 !important;
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 5px 15px 15px;
+  margin: 15px 0 !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  border-radius: 15px;
+}
+
+#account {
+  textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    width: 95% !important;
+  }
+}
+
+#functions_profiles {
+  .controls {
+    .controls {
+      margin: 0 !important;
+    }
+  }
+  select {
+    margin: 15px 0 0 0 !important;
+  }
+}
+
+.tel {
+  width: 70%;
+}
+
+#functions_profiles_dyn {
+  .span3:nth-child(odd) {
+    background: rgba(220, 220, 220, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  }
+  background-image: url(/assets/dyn_func_bg.png);
+  background-repeat: repeat-x;
+  .services > p {
+    min-height: 20px;
+    padding: 15px;
+  } 
+  .control-group {
+    min-height: 50px;
+    margin: 0 !important;
+  }
+  .controls {
+    margin-left: 0 !important;
+  }
+
+  select {
+    width: 210px !important;
+    margin: 5px;
+  }
+
+  textarea {
+    width: 177px !important;
+  }
+
+  .btn-group {
+    margin: 10px;
+  }
+
+  .input-append {
+    margin: 5px 7px;
+    .add-on {
+      height: 30px;
+      background-color: $gray-light;
+      color: $white;
+      font-family: 'Museo2';
+    }
+  }
+
+}
+
+.sleeping > span {
+  width: 80px !important;
+}
+
+#fp_add_button {
+  margin: 0;
+  height: 50px;
+  > a {
+    float: right;
+  }
+}
+
+.advantages {
+  td {
+    padding: 5px;
+  }
+  .icon-check {
+    color: #00FF00;
+  }
+  .icon-remove {
+    color: #FF0000;
+  }
+}
+.step {
+  display: table;
+  .span2, .span3 {
+    min-height: 100px;
+  }
+  .span2 > img, .span3 > p {
+    height: 150px;
+    display:table-cell;
+     vertical-align:middle;
+     text-align:center;
+  } 
+}
+
+/* Footer */
+
+footer {
+  ul {
+    width: 155px;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    color: $white;
+    li {
+      strong {
+        padding: 0 0 15px 0;
+        display: block;
+      }
+    }
+    a {
+      color: $white;
+      &:hover {
+        background-color: transparent !important;
+        color: $family;
+      }
+    }
+  }
+}
+
+
+.order {
+  a {
+    color: #999999;
+  }
+}
+
+.emblems {
+  a.active {
+    color: $family !important;
+    border-color: $family !important;
+  }
+}
+
+.checkbox.inline {
+  input, label {
+    float: left;
+  }
+  label {
+    margin-left: 5px;
+  }
+}
+
+#cvv {
+  position: relative;
+  .cvv2 {
+    position: absolute;
+    left: 255px;
+    top: -200px;
+    display: none;
+  }
+  &:hover{
+    .cvv2 {
+      display: block;
+    }
+  }
+}
+
+.address_confirm {
+  span {
+    font-weight: bold;
+    &.comma {
+      &:after {
+        content: ', '
+      }
+    }
+  }
+}
