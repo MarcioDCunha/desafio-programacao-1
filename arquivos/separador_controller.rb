@@ -69,8 +69,8 @@ fita_espelho.each_line do |linha|
                                                       '#{venda[:item_price]}',
                                                       '#{venda[:merchant_name]}',
                                                       '#{venda[:merchant_address]}',
-                                                      '#{venda[:nacionalidade]}',
-                                                      #{venda[:registroGeral]})")
+                                                      '#{data_formatada}',
+                                                       #{data_formatada})")
 
       end
     end
